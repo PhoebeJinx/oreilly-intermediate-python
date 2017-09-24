@@ -89,14 +89,15 @@ It should look like this:
 
 <pre>sqlite> .schema category
 CREATE TABLE "category" (
-    id INTEGER PRIMARY KEY,
+    id INTEGER NOT NULL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     game INTEGER NOT NULL,
+    round INTEGER NOT NULL
     boardPosition INTEGER
     );</pre>
 
-This tells us that the <code>category</code> table has 4 fields:
-<code>id</code>, <code>name</code>, <code>game</code>, and
+This tells us that the <code>category</code> table has 5 fields:
+<code>id</code>, <code>name</code>, <code>game</code>, <code>round</code>, and
 <code>boardPosition</code>.
 
 ### Read more about SQL
